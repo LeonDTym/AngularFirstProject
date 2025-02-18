@@ -8,8 +8,8 @@ describe('MoreInfoButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MoreInfoButtonComponent]
-    })
+    imports: [MoreInfoButtonComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(MoreInfoButtonComponent);
