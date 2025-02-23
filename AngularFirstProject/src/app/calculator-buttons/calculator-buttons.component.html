@@ -1,0 +1,13 @@
+<div class="calculator-buttons">
+    <button *ngFor="let button of buttons" 
+            (click)="handleButtonClick(button)"
+            [ngClass]="{
+              'number': button.type === 'number',
+              'operation': button.type === 'operation',
+              'clear': button.type === 'clear',
+              'equals': button.type === 'equals'
+            }">
+      {{ button.displayValue }}
+    </button>
+
+</div>

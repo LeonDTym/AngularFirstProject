@@ -21,7 +21,8 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0",
-    "jest-editor-support": "*"
+    "jest-editor-support": "*",
+    "@fortawesome/fontawesome-free": "^6.5.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.7",
