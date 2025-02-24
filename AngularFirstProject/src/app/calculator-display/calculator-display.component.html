@@ -1,0 +1,12 @@
+<div class="calculator-display">
+  <div class="display-header">
+    <button class="theme-toggle" (click)="onThemeToggle()">
+      <i class="fas fa-sun theme-icon"></i>
+
+    </button>
+  </div>
+  <div class="display-content">
+    <div class="current-value">{{ currentValue }}</div>
+    <div *ngIf="result !== null" class="result">= {{ result }}</div>
+  </div>
+</div>

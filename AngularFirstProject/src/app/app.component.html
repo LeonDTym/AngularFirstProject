@@ -1,7 +1,21 @@
-<div class="app-container">
-  <app-user-info></app-user-info>
-  <app-more-info-button></app-more-info-button>
+
+<div class="calculator" [ngClass]="currentTheme">
+  <div class="calculator-grid">
+    <div class="display-area">
+      <app-calculator-display
+        [currentValue]="currentValue"
+        [result]="result"
+        (themeChange)="onThemeChange()">
+      </app-calculator-display>
+    </div>
+    
+    <div class="buttons-area">
+      <app-calculator-buttons
+        (numberClick)="onNumberClick($event)"
+        (operationClick)="onOperationClick($event)"
+        (clearClick)="onClearClick()"
+        (equalsClick)="onEqualsClick()">
+      </app-calculator-buttons>
+    </div>
+  </div>
 </div>
-
-
-<router-outlet />
