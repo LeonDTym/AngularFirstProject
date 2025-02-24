@@ -10,11 +10,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './calculator-display.component.scss'
 })
 export class CalculatorDisplayComponent {
-  @Output() themeChange = new EventEmitter<void>();
+
   @Input() currentValue: string = '0';
-
   @Input() result: string | null = null;
-
+  @Output() themeChange = new EventEmitter<void>();
   onThemeToggle() {
     console.log('нажал тему поменял');
 
