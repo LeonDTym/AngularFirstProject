@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './calculator-buttons.component.html',
-  styleUrl: './calculator-buttons.component.scss'
+  styleUrls: ['./calculator-buttons.component.scss']
 })
 export class CalculatorButtonsComponent {
   @Output() numberClick = new EventEmitter<string>();
@@ -22,7 +22,6 @@ export class CalculatorButtonsComponent {
   @Output() clearClick = new EventEmitter<void>();
   @Output() equalsClick = new EventEmitter<void>();
 
-  //вот тут не совсем понял правильно ли
   buttons: ButtonConfig[] = [
     { type: 'number', displayValue: '7', value: '7', action: () => this.numberClick.emit('7') },
     { type: 'number', displayValue: '8', value: '8', action: () => this.numberClick.emit('8') },

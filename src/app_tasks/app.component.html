@@ -1,0 +1,11 @@
+<div>
+  <h1>Обмен данными между компонентами</h1>
+  <app-sender></app-sender>
+  <app-receiver></app-receiver>
+  <app-login></app-login>
+  <button (click)="authService.login()">Войти</button>
+  <button (click)="authService.logout()">Выйти</button>
+  <div *appLoginVisibility>
+    <app-protected></app-protected>
+  </div>
+</div>

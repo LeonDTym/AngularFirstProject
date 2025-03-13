@@ -1,0 +1,9 @@
+<ng-template #tpl let-name>
+    <p>Привет, {{ name }}!</p>
+</ng-template>
+<button (click)="addTemplate('Алиса')">Добавить Алису</button>
+<button (click)="addTemplate('Боб')">Добавить Боба</button>
+<button (click)="clearTemplates()">Очистить</button>
+<p *appAdvancedIf="{ condition: isVisible, delay: 1000 }">Этот текст появится с задержкой 1 секунда</p>
+
+<button (click)="isVisible = !isVisible">Переключить</button> <!-- Добавлено для управления видимостью -->

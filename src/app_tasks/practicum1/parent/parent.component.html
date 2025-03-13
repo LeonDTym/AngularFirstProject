@@ -1,0 +1,6 @@
+<app-child #child>
+  <p #contentRef>Этот контент передан из родителя</p>
+</app-child>
+<button (click)="logChildContent()">Логировать контент</button>
+
+<app-dynamic-container [isVisible]="isVisible"></app-dynamic-container>

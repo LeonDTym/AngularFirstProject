@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './calculator-display.component.html',
-  styleUrl: './calculator-display.component.scss'
+  styleUrls: ['./calculator-display.component.scss']
 })
 export class CalculatorDisplayComponent {
 
