@@ -1,0 +1,8 @@
+<button (click)="openModal()">Открыть модальное окно</button>
+
+<div *ngIf="isOpen" class="modal">
+  <div class="modal-content">
+    <span (click)="closeModal()" class="close-button">&times;</span>
+    <p>auth-modal работает!</p>
+  </div>
+</div>
