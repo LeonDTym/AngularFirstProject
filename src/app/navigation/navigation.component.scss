@@ -1,27 +1,25 @@
-nav {
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Скрыто за пределами экрана */
+  width: 250px;
+  height: 100%;
   background-color: #f8f9fa;
-  padding: 10px;
+  transition: left 0.3s ease; /* Плавный переход */
+  z-index: 1000;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.sidebar.active {
+  left: 0; /* Показываем меню */
 }
 
-li {
-  display: inline;
-  margin-right: 15px;
+.nav-link {
+  padding: 15px 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
 }

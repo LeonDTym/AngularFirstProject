@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,4 +11,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   styleUrls: ['./add-book.component.scss']
 })
 
-export class AddBookComponent {}
+export class AddBookComponent {
+  constructor(private router: Router){}
+
+  openAuth() {
+    this.router.navigate(['/auth']);
+  }
+}

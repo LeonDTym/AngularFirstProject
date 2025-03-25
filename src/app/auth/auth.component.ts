@@ -7,12 +7,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 @Component({
   selector: 'app-auth',
   standalone: true,
-  imports: [CommonModule, MatInputModule, MatFormFieldModule, AuthModalComponent],
+  imports: [CommonModule, MatInputModule, MatFormFieldModule],
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss'],
 })
 export class AuthComponent {
-  @ViewChild(AuthModalComponent) authModal!: AuthModalComponent; // Получаем доступ к AuthModalComponent
+  @ViewChild(AuthModalComponent) authModal!: AuthModalComponent; // Получаем доступ к AuthModalComponent 
+  isOpen = false;
 
   openModal() {
     this.authModal.openModal(); // Вызываем метод openModal из AuthModalComponent

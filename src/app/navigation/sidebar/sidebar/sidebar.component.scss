@@ -1,0 +1,39 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px; /* Скрыто за пределами экрана */
+    width: 260px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 1px 1px #000;
+    border: 1px;
+    transition: left 0.3s ease; /* Плавный переход */
+    z-index: 1000;
+  }
+  
+  .sidebar.active {
+    left: 0; /* Показываем меню */
+  }
+  
+  .nav-link {
+    padding: 15px 20px;
+  }
+
+
+  .example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  

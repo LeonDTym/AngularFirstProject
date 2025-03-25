@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common'; // Импорт CommonModule
   imports: [CommonModule] // Добавляем CommonModule в импорты
 })
 export class AuthModalComponent {
-  isOpen: boolean = false; // Переменная состояния для управления видимостью модального окна
+  isOpen = false; // Переменная состояния для управления видимостью модального окна
 
   openModal() {
     this.isOpen = true; // Метод для открытия модального окна
